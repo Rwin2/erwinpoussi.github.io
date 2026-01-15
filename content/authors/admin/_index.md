@@ -4,7 +4,7 @@ first_name: Erwin
 last_name: POUSSI
 
 status:
-  icon: 🛰️
+  icon: 🤖
 
 superuser: true
 
@@ -14,7 +14,7 @@ organizations:
   - name: Stanford University
     url: https://www.stanford.edu/
 
-bio: I work on autonomous systems at the intersection of perception, decision-making, and learning—especially reinforcement learning for drones and LLM-powered scientific agents for multi-omics workflows.
+bio: "Autonomous systems (RL, perception, decision-making) and LLM-powered scientific agents for multi-omics workflows."
 
 interests:
   - Autonomous Robotics
@@ -27,10 +27,10 @@ education:
   courses:
     - course: MS in Aeronautics & Astronautics
       institution: Stanford University
-      year: 2025–2027
+      year: "2025–2027"
     - course: Master’s-level program in Mechanical Engineering (minor in Entrepreneurship)
       institution: École Polytechnique
-      year: 2020–2025
+      year: "2020–2025"
 
 social:
   - icon: envelope
@@ -58,3 +58,4 @@ I also work in the Multi-Robot Systems Lab with Prof. [Mac Schwager](https://web
 Before Stanford, I completed a Master’s-level program in Mechanical Engineering at École Polytechnique (minor in Entrepreneurship), with coursework spanning control, optimization, statistics, and computational methods.
 
 {style="text-align: justify;"}
+
