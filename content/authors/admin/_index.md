@@ -1,50 +1,48 @@
 ---
 # Display name
-title: Guillaume Goujard
-
-# Name pronunciation (optional)
-# name_pronunciation: Chien Shiung Wu
+title: Erwin POUSSI
 
 # Full name (for SEO)
-first_name: Guillaume
-last_name: Goujard
+first_name: Erwin
+last_name: POUSSI
 
 # Status emoji
 status:
-  icon: ☕️
+  icon: 🤖
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position/tagline
-role: Sr. Systems Engineer, PhD
+role: MS Student (Aeronautics & Astronautics) @ Stanford | Research Assistant (MSL & Qiu Lab)
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Tesla
-    url: https://tesla.com/
+  - name: Stanford University
+    url: https://www.stanford.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include control and optimization under uncertainty and programmable matter.
+bio: I work on autonomous systems at the intersection of perception, decision-making, and learning—especially reinforcement learning for robots, unmanned vehicles and LLM-powered scientific agents for multi-omics workflows.
 
 # Interests to show in About widget
 interests:
-  - Artificial Intelligence
-  - Optimal control
-  - State estimation
+  - Autonomous Robotics
+  - Reinforcement Learning
+  - Computer Vision
+  - Decision-Making under Uncertainty
+  - Control & Optimization
 
 # Education to show in About widget
 education:
   courses:
-    - course: PhD in Control
-      institution: University of California, Berkeley
-      year: 2023
-    - course: MS in Systems Engineering
-      institution: University of California, Berkeley
-      year: 2020
-    - course: Diplôme d'ingénieur
-      institution: Ecole polytechnique
-      year: 2019
+    - course: MS in Aeronautics & Astronautics
+      institution: Stanford University
+      year: 2025–2027
+    - course: Master’s-level program in Mechanical Engineering (minor in Entrepreneurship)
+      institution: École Polytechnique
+      year: 2020–2025
+---
+
 
 # Skills
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
@@ -56,16 +54,21 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: '/#contact'
-  - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
-    icon_pack: fas
-    link: https://scholar.google.com/citations?user=oQ0wUvAAAAAJ&hl=en
+    link: mailto:erwinpi@stanford.edu
+
   - icon: github
     icon_pack: fab
-    link: https://github.com/GuillaumeGoujard
+    link: https://github.com/Rwin2
+
   - icon: linkedin
     icon_pack: fab
-    link: https://www.linkedin.com/in/guillaumegoujard1/
+    link: www.linkedin.com/in/erwin-poussi-a05099215
+
+  # CV PDF (mets ton PDF dans: static/uploads/resume.pdf)
+  - icon: cv
+    icon_pack: ai
+    link: uploads/resume.pdf
+
   # Link to a PDF of your resume/CV.
   # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
   # and uncomment the lines below.
@@ -77,9 +80,13 @@ social:
 highlight_name: true
 ---
 
-I’m a Sr. Systems Engineer in Tesla's Powertrain Architecture and Modeling Team. I'm in charge of developing parametric models to best represent vehicles in order to help drive decisions on the system architecture. 
+I’m currently an MS student in Aeronautics & Astronautics at Stanford University (2025–2027). My work focuses on autonomous systems at the intersection of perception, decision-making, and learning—especially reinforcement learning for autonomous agents.
 
-I hold a PhD from UC Berkeley where I was advised by Prof. [Scott Moura](https://ce.berkeley.edu/people/faculty/moura). My research focused on leveraging mathematical optimization and stochastic processes over state-space models to analyze structure and inform decision and control in energy systems. 
+At Stanford, I work in the Multi-Robot Systems Lab with Prof. [Mac Schwager](https://web.stanford.edu/~schwager/), where I develop reinforcement learning algorithms for language-guided drone navigation (instruction-conditioned goal identification and autonomous navigation). In parallel, I work on structure-from-motion 3D reconstruction using photogrammetry.
 
-I always enjoyed applying my research to industry problems. I’ve interned at [Heila Technologies](https://heilatech.com/), [Tesla's Opticaster](https://www.tesla.com/support/energy/tesla-software/opticaster) team, and was a research scholar at [Lawrence Livermore National Laboratories](https://gs.llnl.gov/energy-homeland-security/cyber-and-infrastructure-resilience/energy-infrastructure).
+I am also a Research Assistant in Prof. [Xiaojie Qiu](https://www.devo-evo.com/people/xiaojie/)’s lab, contributing to Pantheon-CLI at the Stanford School of Medicine—an open-source, LLM-powered agent framework for scientific analysis—where I work on multi-omics workflows and reinforcement learning for autonomous gene panel design.
+
+Before Stanford, I completed a Master’s-level program in Mechanical Engineering at École Polytechnique (minor in Entrepreneurship), with coursework spanning control, optimization, statistics, and computational methods.
+
 {style="text-align: justify;"}
+
