@@ -8,7 +8,7 @@ status:
 
 superuser: true
 
-role: MS Student (Aeronautics & Astronautics) @ Stanford | Research Assistant (MSL & Qiu Lab)
+role: MS Student (Aeronautics & Astronautics) | Research Assistant (MSL & Qiu Lab)
 
 organizations:
   - name: Stanford University
