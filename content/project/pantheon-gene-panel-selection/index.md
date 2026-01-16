@@ -5,7 +5,7 @@ draft: false
 summary: "A multi-agent LLM system that automates gene panel selection for large-scale spatial transcriptomics."
 tags: ["LLMs", "Multi-Agent Systems", "Spatial Transcriptomics", "AI Systems"]
 image:
-  filename: fig2.pdf
+  filename: fig2.jpg
 ---
 **Pantheon Gene Panel Selection** is a **multi-agent LLM system** for automated gene panel design in **spatial transcriptomics**.
 
