@@ -5,7 +5,7 @@ draft: false
 summary: "A reinforcement-learning framework for adaptive gene panel selection that preserves single-cell structure while minimizing panel size."
 tags: ["Reinforcement Learning", "Single-Cell", "Computational Biology", "Clustering"]
 image:
-  filename: featured.png
+  filename: featured.jpeg
 ---
 **SelectSmart** is a reinforcement-learning framework for **gene panel selection** in single-cell transcriptomics.
 
