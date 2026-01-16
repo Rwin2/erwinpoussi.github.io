@@ -12,3 +12,4 @@ image:
 The system coordinates **five specialized LLM agents** built on open-source models and extended with **custom toolchains and domain-specific reasoning**. A **Leader Agent** translates ambiguous biological intent into structured computational steps and orchestrates agents such as the **Selection Expert**, with iterative validation and error handling.
 
 Deployed in collaboration with **Vizgen**, Pantheon processes **large-scale multi-omics datasets** and produces **curated gene panels** that previously required extensive manual expertise.
+**Status:** 📝 Paper in preparation
