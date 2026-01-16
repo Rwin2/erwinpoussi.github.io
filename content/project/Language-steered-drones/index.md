@@ -16,7 +16,7 @@ This project explores how natural-language instructions can be mapped to semanti
 - Python, PyTorch, Gsplat
 
 ### Current status
-This project is in an **early stage**. Below is a preliminary demonstration showing **vehicle motor rate control** using **RRT-based trajectory tracking** along a spiral path.
+This project is in an **early stage**. Below is a preliminary demonstration showing **vehicle motor rate control** using **RRT-based trajectory tracking** along a spiral path in 3D gaussian splat reconstructed environment.
 
 ## Demo
 <iframe width="100%" height="420"
