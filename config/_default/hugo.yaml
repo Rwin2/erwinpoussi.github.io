@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: Erwin POUSSI # Website name
-baseURL: 'https://example.com/' # Website URL
+baseURL: "https://example.com/" # Website URL
 
 ############################
 ## LANGUAGE
@@ -27,19 +27,19 @@ enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>
 ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
 permalinks:
-  event: '/talk/:slug/'
-  tags: '/tag/:slug/'
-  categories: '/category/:slug/'
-  publication_types: '/publication-type/:slug/'
+  event: "/talk/:slug/"
+  tags: "/tag/:slug/"
+  categories: "/category/:slug/"
+  publication_types: "/publication-type/:slug/"
 disableAliases: true
 outputs:
   home: [HTML, RSS, JSON, WebAppManifest, headers, redirects]
   section: [HTML, RSS]
 imaging:
-  resampleFilter: lanczos
+  resampleFilter: "Lanczos"
   quality: 95
-  anchor: smart
-timeout: 600000
+  anchor: "Smart"
+timeout: "600s" # 10 minut
 taxonomies:
   tag: tags
   category: categories
