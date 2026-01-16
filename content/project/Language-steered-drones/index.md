@@ -6,7 +6,6 @@ tags: ["Reinforcement Learning", "Robotics", "Autonomous Navigation", "Vision-La
 ---
 Developing reinforcement learning algorithms for **language-guided drone navigation**, enabling **instruction-conditioned, object-level goal identification** and **autonomous closed-loop navigation**.
 
-This project explores how natural-language instructions can be mapped to semantic, object-level navigation goals and executed by autonomous aerial agents.
 
 ### Technical stack
 - Reinforcement Learning (policy gradients, actor–critic)
