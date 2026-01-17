@@ -19,7 +19,16 @@ The framework integrates:
 - **Pore-scale CFD simulations** (NGA2)
 - **Physics-informed Random Forest surrogate modeling**
 - **Global multi-objective optimization** (NSGA-II, CTAEA)
-- **Local high-fidelity refinement** (Powell’s method)
+- **Local high-fidelity refinement** 
+
+## Demo
+<iframe
+  width="100%"
+  height="420"
+  src="https://www.youtube.com/embed/oUiSoeTgRko"
+  frameborder="0"
+  allowfullscreen>
+</iframe>
 
 ### Optimization results
 ![Local Powell refinement of optimal geometry](Powells_zoomed.png)
@@ -28,5 +37,3 @@ Trained on **tens of thousands of CFD simulations**, the surrogate achieves **<1
 
 **Status:** 📝 Paper in preparation  
 
-▶️ **Project video:**  
-https://youtu.be/oUiSoeTgRko
