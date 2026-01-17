@@ -9,9 +9,6 @@ tags:
   - CFD
   - Fluid–Structure Interaction
   - Aerospace Engineering
-image:
-  filename: Powells_zoomed.png
-external_link: https://youtu.be/oUiSoeTgRko
 ---
 
 This project presents a **physics-informed surrogate modeling framework** based on **Random Forests** for optimizing **fabric permeability** in **supersonic Mars landing parachutes**.
@@ -23,6 +20,9 @@ The framework integrates:
 - **Physics-informed Random Forest surrogate modeling**
 - **Global multi-objective optimization** (NSGA-II, CTAEA)
 - **Local high-fidelity refinement** (Powell’s method)
+
+### Optimization results
+![Local Powell refinement of optimal geometry](Powells_zoomed.png)
 
 Trained on **tens of thousands of CFD simulations**, the surrogate achieves **<10% worst-case relative error**, while optimized geometries reproduce experimental permeability with **<1% mean error**. The resulting models provide **efficient and physically consistent closures** for large-scale **FSI simulations of parachute inflation**.
 
