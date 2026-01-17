@@ -6,10 +6,9 @@ summary: "Undergraduate research project on autonomous spacecraft docking conduc
 tags:
   - Space Robotics
   - Autonomous Systems
-  - Guidance Navigation and Control
+  - Guidance, Navigation, and Control
   - Aerospace Engineering
 ---
-
 
 ## Docking demonstration
 <iframe
@@ -22,9 +21,7 @@ tags:
 
 This project was conducted as an **undergraduate research project** in collaboration with **Nyx Exploration Company** and **Antoine Pallois**, focusing on **autonomous spacecraft docking**.
 
-The work investigated **guidance, navigation, and control (GNC)** strategies for close-proximity operations, with an emphasis on **vision-based relative navigation** and **closed-loop docking maneuvers**. Tests were performed on a quadcopter drone.
+The work investigated **guidance, navigation, and control (GNC)** strategies for **close-proximity operations**, with a particular emphasis on **vision-based relative navigation** and **closed-loop docking maneuvers**. Experimental validation was performed using a **quadcopter drone** as a hardware test platform.
 
-
-
-
-Technical repport Final_Report_Psc_PHY14-3.pdf
+### Technical report
+📄 [Final technical report (PDF)](Final_Report_Psc_PHY14-3.pdf)
