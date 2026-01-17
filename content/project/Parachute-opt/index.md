@@ -11,6 +11,15 @@ tags:
   - Aerospace Engineering
 ---
 
+## Parachute Inflation
+<iframe
+  width="100%"
+  height="420"
+  src="https://www.youtube.com/embed/oUiSoeTgRko"
+  frameborder="0"
+  allowfullscreen>
+</iframe>
+
 This project presents a **physics-informed surrogate modeling framework** based on **Random Forests** for optimizing **fabric permeability** in **supersonic Mars landing parachutes**, conducted as part of a research project under ([**Prof. Jason Rabinovitch**](https://www.stevens.edu/profile/jrabinov#experience)) at Stevens Institute of Technology.
 
 
@@ -22,14 +31,7 @@ The framework integrates:
 - **Global multi-objective optimization** (NSGA-II, CTAEA)
 - **Local high-fidelity refinement**
 
-## Demo
-<iframe
-  width="100%"
-  height="420"
-  src="https://www.youtube.com/embed/oUiSoeTgRko"
-  frameborder="0"
-  allowfullscreen>
-</iframe>
+
 
 ### Optimization results
 ![Local Powell refinement of optimal geometry](Powells_zoomed.png)

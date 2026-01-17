@@ -10,6 +10,9 @@ tags:
   - AI Systems
 ---
 
+### System overview
+![Pantheon Gene Panel Selection architecture and results](fig2.jpg)
+
 This project focuses on the development of **Pantheon**, an open-source **multi-agent LLM platform for biological scientific workflows**  
 ([Pantheon Project](https://www.pantheon-os.com/)).
 
@@ -24,7 +27,6 @@ and **Dr. Weize Xu**
 
 Deployed in collaboration with **Vizgen**, Pantheon processes **large-scale multi-omics datasets** and produces **curated gene panels** that previously required extensive manual expertise.
 
-### System overview
-![Pantheon Gene Panel Selection architecture and results](fig2.jpg)
+
 
 **Status:** 📝 Paper in preparation
