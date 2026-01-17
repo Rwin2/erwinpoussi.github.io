@@ -1,5 +1,5 @@
 ---
-title: "Pantheon: LLM-Based Bio Agent"
+title: "Pantheon: LLM-Based Bio Assistant"
 date: 2025-10-01
 draft: false
 summary: "A multi-agent LLM system that automates gene panel selection for large-scale spatial transcriptomics."
