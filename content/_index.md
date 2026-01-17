@@ -83,13 +83,29 @@ sections:
       # To show all items, set `tag` to "*".
       # To filter by a specific tag, set `tag` to an existing tag name.
       # To remove the toolbar, delete the entire `filter_button` block.
+      # buttons:
+      #   - name: All
+      #     tag: '*'
+      #   - name: Deep Learning
+      #     tag: Deep Learning, Reinforcement Learning
+      #   - name: Other
+      #     tag: Demo
       buttons:
         - name: All
           tag: '*'
+
+        # RL (SelectSmart + Drones) + Random Forest (Parachute) + Pantheon (LLMs)
         - name: Deep Learning
-          tag: Deep Learning, Reinforcement Learning
-        - name: Other
-          tag: Demo
+          tag: 'Reinforcement Learning,Random Forest,LLMs,Multi-Agent Systems,AI Systems'
+
+        # Drones + Docking (+ on inclut aussi RL + Pantheon comme tu l’as demandé)
+        - name: Robotics
+          tag: 'Robotics,Space Robotics,Autonomous Systems,Autonomous Navigation,Vision-Language,Reinforcement Learning,LLMs,Multi-Agent Systems,AI Systems'
+
+        # Pantheon + SelectSmart (bio side)
+        - name: Bio LLM
+          tag: 'LLMs,Multi-Agent Systems,Spatial Transcriptomics,AI Systems,Single-Cell,Computational Biology,Reinforcement Learning'
+
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '1'
