@@ -9,6 +9,7 @@ tags:
   - Computational Biology
   - Clustering
   - Deep Learning
+  - LLMs
 
 ---
 ## Training Overview

@@ -8,6 +8,7 @@ tags:
   - Autonomous Systems
   - Guidance, Navigation, and Control
   - Aerospace Engineering
+  - Robotics
 ---
 
 ## Docking demonstration
