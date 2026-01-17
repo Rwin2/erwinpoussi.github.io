@@ -21,7 +21,7 @@ The method combines **meta-voted candidate genes**, an **actor–critic architec
 Trained on a **30k-cell kidney dataset** and evaluated on an **independent CZ Kidney dataset**, SelectSmart produces a **500-gene panel** that preserves transcriptomic geometry and **outperforms classical gene panel selection methods**.
 
 ## Training Overview
-![SelectSmart gene panel optimization results](featured.jpeg)
+![SelectSmart gene panel optimization results](RL.jpeg)
 
 **Status:** 🧪 Active development
 
