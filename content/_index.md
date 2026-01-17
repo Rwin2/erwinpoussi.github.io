@@ -96,7 +96,7 @@ sections:
 
         # RL (SelectSmart + Drones) + Random Forest (Parachute) + Pantheon (LLMs)
         - name: Deep Learning
-          tag: 'Reinforcement Learning, Random Forest, LLMs, Multi-Agent Systems, AI Systems'
+          tag: Deep Learning
 
         # Drones + Docking (+ on inclut aussi RL + Pantheon comme tu l’as demandé)
         - name: Robotics

@@ -9,6 +9,7 @@ tags:
   - CFD
   - Fluid–Structure Interaction
   - Aerospace Engineering
+  - Deep Learning
 ---
 
 ## Parachute Inflation

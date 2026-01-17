@@ -8,6 +8,7 @@ tags:
   - Single-Cell
   - Computational Biology
   - Clustering
+  - Deep Learning
 
 ---
 ## Training Overview

@@ -7,6 +7,7 @@ tags:
   - Robotics
   - Autonomous Navigation
   - Vision-Language
+  - Deep Learning
 ---
 
 ## Simulated Trajectory
