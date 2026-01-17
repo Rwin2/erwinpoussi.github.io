@@ -100,11 +100,11 @@ sections:
 
         # Drones + Docking (+ on inclut aussi RL + Pantheon comme tu l’as demandé)
         - name: Robotics
-          tag: 'Robotics,Space Robotics,Autonomous Systems,Autonomous Navigation,Vision-Language,Reinforcement Learning,LLMs,Multi-Agent Systems,AI Systems'
+          tag: Robotics,Space Robotics,Autonomous Systems,Autonomous Navigation,Vision-Language,Reinforcement Learning,LLMs,Multi-Agent Systems,AI Systems
 
         # Pantheon + SelectSmart (bio side)
         - name: Bio LLM
-          tag: 'LLMs,Multi-Agent Systems,Spatial Transcriptomics,AI Systems,Single-Cell,Computational Biology,Reinforcement Learning'
+          tag: LLMs,Multi-Agent Systems,Spatial Transcriptomics,AI Systems,Single-Cell,Computational Biology,Reinforcement Learning
 
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
