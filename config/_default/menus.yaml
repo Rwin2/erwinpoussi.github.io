@@ -10,9 +10,12 @@ main:
   # - name: Posts
   #   url: '#posts'
   #   weight: 20
-  - name: Selected Work 
+  - name: Selected Work
     url: '#projects'
     weight: 30
+  - name: Publications
+    url: '/publication/'
+    weight: 35
   - name: Contact
     url: '#contact'
     weight: 40
