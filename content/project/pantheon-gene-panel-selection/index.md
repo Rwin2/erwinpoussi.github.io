@@ -30,4 +30,4 @@ Deployed in collaboration with **Vizgen**, Pantheon processes **large-scale mult
 
 
 
-**Status:** 📝 Paper in preparation
+**Publication:** Xu, Poussi et al., *PantheonOS: An Evolvable Multi-Agent Framework for Automatic Genomics Discovery*, bioRxiv 2026. [Read preprint](https://www.biorxiv.org/content/10.64898/2026.02.26.707870v1)
