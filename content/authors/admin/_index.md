@@ -14,7 +14,7 @@ organizations:
   - name: Stanford University
     url: https://www.stanford.edu/
 
-bio: "Autonomous systems (RL, perception, decision-making) and LLM-powered scientific agents for multi-omics workflows."
+bio: "Graduate student in Aeronautics & Astronautics at Stanford, working on robot learning and autonomous systems, with a focus on sim-to-real transfer and learned control policies."
 
 interests:
   - Autonomous Robotics
