@@ -4,6 +4,7 @@ date: 2026-01-01
 summary: "End-to-end robot learning pipeline for language-guided drone navigation — from MPC expert demonstrations to sim-to-real deployment via behavioral cloning and DAgger."
 tags:
   - Robotics
+  - Deep Learning
   - Robot Learning
   - Imitation Learning
   - Sim-to-Real Transfer

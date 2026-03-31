@@ -92,19 +92,19 @@ sections:
       #     tag: Demo
       buttons:
         - name: All
-          tag: '*'
+          tag: ‘*’
 
         # RL (SelectSmart + Drones) + Random Forest (Parachute) + Pantheon (LLMs)
         - name: Deep Learning
           tag: Deep Learning
 
-        # Drones + Docking (+ on inclut aussi RL + Pantheon comme tu l’as demandé)
+        # Drones + Docking
         - name: Robotics
-          tag: Robotics,Space Robotics,Autonomous Systems,Autonomous Navigation,Vision-Language,Reinforcement Learning,LLMs,Multi-Agent Systems,AI Systems
+          filter: ".js-id-robotics, .js-id-space-robotics, .js-id-autonomous-systems, .js-id-autonomous-navigation, .js-id-vision-language, .js-id-robot-learning, .js-id-imitation-learning"
 
         # Pantheon + SelectSmart (bio side)
         - name: Bio LLM
-          tag: LLMs,Multi-Agent Systems,Spatial Transcriptomics,AI Systems,Single-Cell,Computational Biology,Reinforcement Learning
+          filter: ".js-id-llms, .js-id-multi-agent-systems, .js-id-spatial-transcriptomics, .js-id-ai-systems, .js-id-single-cell, .js-id-computational-biology, .js-id-reinforcement-learning"
 
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
