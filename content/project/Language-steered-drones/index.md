@@ -3,6 +3,7 @@ title: "Language-Steered Drones"
 date: 2026-01-01
 summary: "End-to-end robot learning pipeline for language-guided drone navigation — from MPC expert demonstrations to sim-to-real deployment via behavioral cloning and DAgger."
 tags:
+  - Robotics
   - Robot Learning
   - Imitation Learning
   - Sim-to-Real Transfer
@@ -14,32 +15,25 @@ tags:
 <iframe
   width="100%"
   height="420"
-  src="https://www.youtube.com/embed/tMEvtIlwTAw"
+  src="https://www.youtube.com/embed/R6zd46fFNQ0"
   frameborder="0"
   allowfullscreen>
 </iframe>
 
-**SINGER** (Stanford Intelligent Navigation with Generalist Embodied Robots) trains a neural drone pilot — *InstinctJester* — to navigate to language-described targets inside photorealistic **3D Gaussian Splat** environments.
+Developed a vision-language navigation (VLN) policy for autonomous drone flight in photorealistic 3D Gaussian Splatting environments. Given a natural language instruction like "go to the green leafblower," the drone autonomously identifies and navigates to the target — collision-free.
 
-The system follows a full Learning from Demonstration pipeline. An **MPC expert** (VehicleRateMPC via ACADOS optimal control) flies **RRT\*-planned trajectories** through the scene, generating ~8,800 perturbed short rollouts per object. Each rollout starts from a randomly offset state, forcing the expert to demonstrate recovery behavior — not just nominal flight. At each timestep, the pilot's **OODA loop** extracts what the neural network would observe (drone state, goal descriptor, CLIPSeg visual embeddings, 20-step motion history) paired with the expert's action `[thrust, ωx, ωy, ωz]`, yielding ~52,800 labeled training samples.
+The video shows the drone's onboard view: RGB (left) and semantic similarity field (right) for the query "green and pink leafblower." The system first encodes the language instruction via CLIP embeddings, localizes the target using CLIPSeg semantic segmentation, and generates real-time control commands to navigate through a cluttered indoor environment while avoiding obstacles.
 
-The **InstinctJester** architecture separates temporal reasoning from command generation: a **HistoryEncoder** compresses the rolling 20-step motion history into a feature vector, and a **Commander** network maps the full observation to motor commands. Both are trained via **behavioral cloning** (MSE loss, Adam, lr=1e-4) on expert demonstrations.
+The control policy is a lightweight neural network (SqueezeNet Commander MLP) trained via Behavioral Cloning from an ACADOS-based MPC expert. A key contribution is the design and implementation of a full DAgger (Dataset Aggregation) pipeline — including mixed-policy rollouts, expert annotation filtering, iterative retraining with best-model checkpointing, and automated benchmarking — to systematically correct for compounding errors under distribution shift. A second key contribution is the introduction of explicit geometric features — bearing and elevation — extracted from the CLIPSeg heatmap centroid, providing the policy with a direct spatial signal for goal-directed control. This replaces the previous approach where target localization had to be implicitly learned from visual embeddings alone.
 
-To correct distributional shift, **DAgger** iteratively refines the Commander: a mixed policy (β · expert + (1−β) · pilot) flies full trajectories, annotations are filtered by deviation and goal proximity, and the Commander is retrained on BC data plus the new corrections (lr=3e-5). A best-model restoration strategy with fixed evaluation seeds (seed=42) ensures each iteration makes genuine, reproducible progress.
+**Results:** 88% navigation success rate (up from 52%), collision rate reduced from 20% to 8%, with generalization to unseen RRT-planned trajectories.
 
-Natural language goal specification uses **CLIPSeg** to ground object queries (e.g., *"green clock"*, *"yellow cordless drill on two boxes"*) to spatial targets in the reconstructed scene, enabling instruction-conditioned navigation without manual goal annotation.
-
-This research is conducted under **Prof. Mac Schwager**  
-([Multi-Robot Systems Lab, Stanford](https://web.stanford.edu/~schwager/))  
-in collaboration with **PhD student Maximilian Adang**  
+This research is conducted under **Prof. Mac Schwager**
+([Multi-Robot Systems Lab, Stanford](https://web.stanford.edu/~schwager/))
+in collaboration with **PhD student Maximilian Adang**
 ([MSL Stanford](https://msl.stanford.edu/people/maximilianadang)).
 
-### Technical Stack
-- Behavioral cloning + DAgger (dataset aggregation) for policy learning
-- MPC expert (ACADOS) + RRT\* for demonstration generation
-- CLIPSeg for language-conditioned object grounding
-- 3D Gaussian Splatting (GSplat / FiGS) for photorealistic simulation
-- Sim-to-real transfer with real-hardware evaluation
-- Python · PyTorch · ACADOS · W&B
-```
+**[GitHub Repository](https://github.com/Rwin2/SINGER/tree/feature/centroid-v9)**
 
+### Tech Stack
+PyTorch · 3D Gaussian Splatting (gsplat) · CLIPSeg · ACADOS optimal control · CUDA
