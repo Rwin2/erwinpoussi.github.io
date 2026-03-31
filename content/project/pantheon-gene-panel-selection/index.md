@@ -11,6 +11,18 @@ tags:
   - Deep Learning
 ---
 
+## Live Demo
+<iframe
+  width="100%"
+  height="520"
+  src="https://app.pantheonos.stanford.edu/"
+  frameborder="0"
+  allow="accelerometer; clipboard-write; encrypted-media"
+  allowfullscreen>
+</iframe>
+
+*If the embed doesn't load, [open the live app directly](https://app.pantheonos.stanford.edu/).*
+
 ### System overview
 ![Pantheon Gene Panel Selection architecture and results](fig2.jpg)
 
