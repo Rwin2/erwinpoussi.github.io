@@ -51,7 +51,7 @@ highlight_name: true
 
 I am currently pursuing an **M.S. in Aeronautics & Astronautics at Stanford University (2025–2027)**, where my work focuses on autonomous systems at the intersection of **perception, decision-making, and learning**.
 
-At Stanford, I am a **Research Assistant** in Prof. [Xiaojie Qiu](https://www.devo-evo.com/people/xiaojie/)’s lab, contributing to **Pantheon-CLI**, an open-source, LLM-powered agent framework for scientific analysis at the Stanford School of Medicine. My research centers on **multi-omics workflows** and **agent-based methods for autonomous gene panel design**.
+At Stanford, I am a **Research Assistant** in Prof. [Xiaojie Qiu](https://www.devo-evo.com/people/xiaojie/)’s lab, contributing to **Pantheon-CLI**, an open-source, LLM-powered agent framework for scientific analysis at the Stanford School of Medicine. My research centers on **multi-omics workflows** and **agent-based methods for autonomous gene panel design**. I am currently fine-tuning and continually pretraining **Qwen3** LLMs to power Pantheon’s self-evolving agent backbone, leveraging closed-loop reinforcement learning from human feedback (RLHF) and tool-augmented inference to build domain-adaptive, evolvable agents for autonomous genomic reasoning.
 
 I also conduct research in the **Multi-Robot Systems Lab** with Prof. [Mac Schwager](https://web.stanford.edu/~schwager/), where I work on **instruction-conditioned drone navigation**, combining language-based goal inference with autonomous control. In parallel, I develop **structure-from-motion pipelines** for 3D reconstruction using drone-based photogrammetry.
 
