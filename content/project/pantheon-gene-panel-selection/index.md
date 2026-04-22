@@ -30,9 +30,11 @@ My work specifically targets **Gene Panel Selection (GPS)**, a core capability o
 
 The GPS system coordinates **five specialized LLM agents**, built on open-source models and extended with **custom toolchains and domain-specific reasoning**. A **Leader Agent** interprets ambiguous biological intent, decomposes high-level scientific questions into structured computational steps, and orchestrates agents such as the **Selection Expert**, with iterative validation and error handling.
 
-This research is conducted in collaboration with **Prof. Xiaojie Qiu**  
-([Qiu Lab, Stanford](https://www.devo-evo.com/people/xiaojie/))  
-and **Dr. Weize Xu**  
+I am currently **fine-tuning and continually pretraining Qwen3 LLMs** to power Pantheon's self-evolving agent backbone, leveraging **reinforcement learning from verifiable rewards (RLVR)** and **tool-augmented inference** to build domain-adaptive, evolvable agents for autonomous genomic reasoning. I also collaborate with **Vizgen** to integrate a **reinforcement learning module** for autonomous gene panel design by Pantheon.
+
+This research is conducted in collaboration with **Prof. Xiaojie Qiu**
+([Qiu Lab, Stanford](https://www.devo-evo.com/people/xiaojie/))
+and **Dr. Weize Xu**
 ([Stanford Profile](https://profiles.stanford.edu/weize-xu)).
 
 Deployed in collaboration with **Vizgen**, Pantheon processes **large-scale multi-omics datasets** and produces **curated gene panels** that previously required extensive manual expertise.
