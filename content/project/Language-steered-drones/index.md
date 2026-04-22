@@ -27,7 +27,7 @@ The video shows the drone's onboard view: RGB (left) and semantic similarity fie
 
 The control policy is a lightweight neural network (SqueezeNet Commander MLP) trained via Behavioral Cloning from an ACADOS-based MPC expert. A key contribution is the design and implementation of a full DAgger (Dataset Aggregation) pipeline — including mixed-policy rollouts, expert annotation filtering, iterative retraining with best-model checkpointing, and automated benchmarking — to systematically correct for compounding errors under distribution shift. A second key contribution is the introduction of explicit geometric features — bearing and elevation — extracted from the CLIPSeg heatmap centroid, providing the policy with a direct spatial signal for goal-directed control. This replaces the previous approach where target localization had to be implicitly learned from visual embeddings alone.
 
-**Results:** 88% navigation success rate (up from 52%), collision rate reduced from 20% to 8%, with generalization to unseen RRT-planned trajectories.
+**Results:** 90% navigation success rate (up from 52%), collision rate reduced from 20% to 8%, with generalization to unseen RRT-planned trajectories.
 
 This research is conducted under **Prof. Mac Schwager**
 ([Multi-Robot Systems Lab, Stanford](https://web.stanford.edu/~schwager/))
