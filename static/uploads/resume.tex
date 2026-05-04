@@ -49,7 +49,7 @@
 \begin{center}
   {\LARGE \textbf{Erwin POUSSI}}\\[4pt]
   \href{mailto:erwinpi@stanford.edu}{erwinpi@stanford.edu} \ \ $\vert$\ \ \textbf{US:} +1 650 250 7491 \ \ $\vert$\ \ \textbf{FR:} +33 (0)7 49 62 90 59 \ \ $\vert$\ \ \href{https://rwin2.github.io/erwinpoussi.github.io/}{Website} \ \ $\vert$\ \ \href{https://github.com/Rwin2}{GitHub} \ \ $\vert$\ \ \href{https://www.linkedin.com/in/erwin-poussi-a05099215/}{LinkedIn}\\[4pt]
-  \textit{Graduate student in Aeronautics \& Astronautics at Stanford, working on robot learning and autonomous systems, with a focus on sim-to-real transfer and learned control policies.}
+  \textit{MS student in Aeronautics \& Astronautics at Stanford, working on robot learning, motion planning, and LLM fine-tuning for autonomous systems, with a focus on sim-to-real transfer and imitation learning.}
 \end{center}
 
 %---------- Education ----------
@@ -58,13 +58,13 @@
 \entry{Stanford University,}{Palo Alto (CA)}{2025 -- 2027}
 \begin{itemize}
   \item MS in Aeronautics \& Astronautics \hfill GPA: \textbf{4.1/4.0}
-  \item Relevant coursework: \textit{AA274A/CS237A --- Principles of Robot Autonomy, CS223A --- Introduction to Robotics, AA228/CS238 --- Decision Making under Uncertainty, AA203 --- Optimal and Learning-Based Control, CS224R --- Deep Learning \& Reinforcement Learning.}
+  \item Relevant coursework: \textit{Principles of Robot Autonomy (AA274A/CS237A), Introduction to Robotics (CS223A), Decision Making under Uncertainty (AA228/CS238), Optimal and Learning-Based Control (AA203), Deep Learning \& Reinforcement Learning (CS224R).}
 \end{itemize}
 
 \entry{Ecole Polytechnique,}{Palaiseau (FRA)}{2020 -- 2025}
 \begin{itemize}
-  \item Master's level program in Mechanical Engineering, with a focus on autonomy and a minor in Entrepreneurship. GPA: \textbf{3.96/4.0}
-  \item Relevant coursework includes \textit{Advanced Machine Learning for Autonomous Agents, Optimization and Control, Statistics, Computational Fluid Dynamics, and Computational Solid Engineering.}
+  \item Master's level in Mechanical Engineering, concentration in Autonomy, minor in Entrepreneurship. GPA: \textbf{3.96/4.0}
+  \item Relevant coursework: \textit{Advanced Machine Learning for Autonomous Agents, Optimization and Control, Statistics.}
 \end{itemize}
 
 %---------- Work ----------
@@ -72,63 +72,42 @@
 
 \entry{Stanford Multi-Robot Systems Lab}{Palo Alto, CA}{Jan.\ 2025 -- Present}
 \begin{itemize}
-  \item \textbf{Research Assistant --- Vision-Language Robotics:} Designed a learning pipeline for language-conditioned visual drone navigation combining behavioral cloning from an MPC expert and DAgger for iterative policy refinement. Used CLIPSeg to ground natural language instructions to objects in 3D Gaussian Splat scenes. Trained and evaluated policies in simulation, then transferred to real hardware, achieving \textbf{90\% navigation success rate} (up from 52\%). \textit{(\href{https://rwin2.github.io/erwinpoussi.github.io/project/singer/}{project page})}
+  \item \textbf{Research Assistant --- Vision-Language Robotics (VLA):} End-to-end pipeline for language-conditioned visual drone navigation via imitation learning and sim-to-real transfer.
+  \item Implemented RRT* for trajectory planning and an MPC controller as expert policy for synthetic data generation, achieving high demonstration success rates to bootstrap behavioral cloning.
+  \item Grounded natural language instructions to 3D Gaussian Splat scenes using CLIPSeg; trained BC + DAgger policies in simulation and transferred to real hardware, reaching \textbf{90\% navigation success rate} (up from 52\%). \textit{(\href{https://rwin2.github.io/erwinpoussi.github.io/project/language-steered-drones/}{project page})}
 \end{itemize}
 
 \entry{Stanford School of Medicine, Qiu Lab}{Palo Alto, CA}{Oct.\ 2025 -- Present}
 \begin{itemize}
-  \item \textbf{Machine Learning Researcher -- Pantheon-CLI:} Contributing to \textit{Pantheon-CLI}, an open-source LLM-powered agent framework for scientific analysis. Currently fine-tuning and continually pretraining Qwen3 LLMs to power Pantheon's self-evolving agent backbone, leveraging reinforcement learning from verifiable rewards (RLVR) and tool-augmented inference to build domain-adaptive, evolvable agents for autonomous genomic reasoning. Also analyzing in-house and public multi-omics datasets (scRNA-seq, spatial transcriptomics), and collaborating with Vizgen to integrate a reinforcement learning module for autonomous gene panel design by Pantheon. \textit{(\href{https://rwin2.github.io/erwinpoussi.github.io/project/pantheon/}{project page})}
+  \item \textbf{ML Researcher --- Pantheon-CLI:} Multi-agent workflow orchestration framework for autonomous scientific discovery, combining LLM reasoning with tool-augmented inference for genomic analysis.
+  \item Implemented an actor-critic RL module for autonomous gene panel selection in single-cell transcriptomics (scRNA-seq), optimizing clustering fidelity (ARI) under panel-size constraints.
+  \item Fine-tuned Qwen3 LLMs using SFT and RLOO (reinforcement learning from verifiable rewards) to power a self-evolving code-generation agent backbone. \textit{(\href{https://rwin2.github.io/erwinpoussi.github.io/publication/xu-2026-pantheonos/}{project page})}
 \end{itemize}
 
 \entry{Stevens Institute of Technology, RRG}{Hoboken, NJ}{Apr.\ 2025 -- Aug.\ 2025}
 \begin{itemize}
-  \item \textbf{Research internship -- Learning based Modeling:} focused on modeling permeability of parachute broadcloth under rarefied conditions. Developed a machine learning-based optimization framework combining random forests and genetic algorithms to infer model parameters from experimental data using a multi-fidelity approach, achieving \textbf{$<$1\% mean error} on experimental permeability. \textit{(\href{https://rwin2.github.io/erwinpoussi.github.io/project/parachute/}{project page})}
-\end{itemize}
-
-\entry{Daher Aerospace}{Nantes, FRA}{Jun.\ 2024 -- Sep.\ 2024}
-\begin{itemize}
-  \item \textbf{Simulation intern:} Developed an ANSYS Mechanical APDL code to simulate the electromagnetic field and heat generation in thermoplastic composite plates produced by Daher's inductive welding machine, aligning simulated and experimental temperatures to enable better control of the final part shape.
-\end{itemize}
-
-\entry{French Police Cybercrime Unit -- Leadership training,}{Paris, FRA}{Nov.\ 2022 -- Apr.\ 2023}
-\begin{itemize}
-  \item \textbf{Officer cadet:} Managed a team of trainee software engineers
-  \item Authored investigation guides on various cyberattack cases for new unit members
-  \item Designed \textit{an AI-based tool for detecting online threats}
-  \item Took part in police patrols.
+  \item \textbf{Research Intern --- ML-Based Aerodynamic Modeling:} Modeled parachute broadcloth permeability under rarefied conditions using a multi-fidelity ML framework combining random forests and genetic algorithms for parameter inference from experimental data; achieved \textbf{$<$1\% mean error}. \textit{(\href{https://rwin2.github.io/erwinpoussi.github.io/project/parachute-opt/}{project page})}
 \end{itemize}
 
 %---------- Research ----------
-\section{Selected Research Work}
+\section{Selected Research}
 
-\subentry{Magdrone}{Oct.\ 2025 -- Jan.\ 2026}
+\subentry{Reinforcement Learning for Algorithmic Trading}{Jan.\ 2025 -- Apr.\ 2025}
 \begin{itemize}
-  \item Built a 3D photogrammetry pipeline combining drone imagery and magnetometer data for magnetic field mapping with improved geospatial accuracy
+  \item Built a custom high-frequency market simulator and trained agents with PPO, Actor-Critic, and DQL, focusing on reward-free exploration, robustness to distribution shifts, and real-time decision-making.
 \end{itemize}
 
-\subentry{Reinforcement Learning for Gene Panel Selection}{Sep.\ 2025 -- Dec.\ 2025}
+\subentry{Guidance System for Autonomous Visual-Based Docking --- Nyx Spacecraft (CSEP)}{Sep.\ 2023 -- May 2024}
 \begin{itemize}
-  \item Formulated gene panel selection as a sequential decision-making problem in single-cell transcriptomics. Trained agents using PPO and actor--critic algorithms to optimize clustering fidelity (ARI) under panel-size constraints, focusing on generalization across tissues and robustness to biological noise
-\end{itemize}
-
-\subentry{Reinforcement Learning for Trading}{Jan.\ 2025 -- Apr.\ 2025}
-\begin{itemize}
-  \item Designed and implemented a custom high-frequency market simulator to evaluate trading strategies under uncertainty. Trained agents with PPO, Actor-Critic, and DQL algorithms, focusing on reward-free exploration, robustness to distribution shifts, and real-time decision-making performance.
-\end{itemize}
-
-\subentry{Undergraduate Research Project}{Sep.\ 2023 -- May 2024}
-\noindent Guidance System Development for Autonomous Visual-Based Docking -- Space center (CSEP)
-\begin{itemize}
-  \item Undergraduate research thesis under the guidance of \textbf{Antoine Pallois}, establishing the groundwork for the navigation algorithm of the Nyx spacecraft, chosen by Axiom to support the ISS by 2027. \textit{(\href{https://rwin2.github.io/erwinpoussi.github.io/project/nyx/}{project page})}
-  \item Supervised by the Exploration Company in collaboration with Polytechnique Space center.
+  \item Undergraduate research thesis developing the vision-based navigation algorithm for the Nyx spacecraft, selected by Axiom to support the ISS by 2027. Supervised by The Exploration Company in collaboration with Polytechnique Space Center. \textit{(\href{https://rwin2.github.io/erwinpoussi.github.io/project/visual-based-docking/}{project page})}
 \end{itemize}
 
 %---------- Skills ----------
-\section{Skills}
+\section{Technical Skills}
 
-\noindent\textbf{Programming}: Java, Python, Object-oriented programming, PyTorch, TensorFlow, CUDA, Ansys Workbench \& APDL, Matlab, Dedalus, Solidworks, VS Code, ROS2, 3DF Zephyr, GTSAM, GSplat, ACADOS, CLIPSeg, W\&B, Habitat-Sim, MuJoCo.\\
-\textbf{Methods}: Behavioral cloning, DAgger, PPO, Actor-Critic, DQL, imitation learning, sim-to-real transfer, RRT*, motion planning, behavior trees, RLVR, LLM fine-tuning, continual pretraining.\\
-\textbf{Languages}: French (native), English (TOEFL 109), Mooré (Fluent), German (basic)
+\noindent\textbf{Programming \& Frameworks}: Python, PyTorch, CUDA, ROS2, MuJoCo, Hugging Face / Transformers, ACADOS, GSplat, GTSAM, CLIPSeg, Habitat-Sim, W\&B\\
+\textbf{Methods}: Behavioral cloning, DAgger, PPO, Actor-Critic, DQL, RRT*, MPC, SFT, RLOO, RLVR, LLM fine-tuning, imitation learning, sim-to-real transfer, motion planning, trajectory optimization\\
+\textbf{Languages}: French (native), English (TOEFL 109), Mooré (fluent), German (basic)
 
 %---------- Publications ----------
 \section{Publications}
@@ -141,23 +120,20 @@
 \noindent\textbf{Volunteering}
 \begin{itemize}
   \item \textbf{Stanford Black Graduate Student Association}, Fundraising Chair \hfill Sep.\ 2025 -- Present
-  \item \textbf{Cheer up,} A cancer support non-profit association: in charge of Outreach and External Relations \hfill Oct.\ 2023 -- Apr.\ 2025
-  \item \textbf{XProjets,} A student consulting firm: Project Manager member of the Business Development Dept \hfill Jan.\ 2024 -- 2025
-  \item \textbf{Freshers' week}: Organized the integration of X23 cohort ($\approx$500 students) \hfill Jan.\ 2024 -- Apr.\ 2024
-  \item \textbf{Tutored} high school and undergrad students in math and physics to prepare them for competitive exams \hfill Sep.\ 2022 -- Apr.\ 2023
+  \item \textbf{Cheer up,} Cancer support non-profit: Outreach and External Relations \hfill Oct.\ 2023 -- Apr.\ 2025
+  \item \textbf{XProjets,} Student consulting firm: Project Manager, Business Development \hfill Jan.\ 2024 -- 2025
+  \item \textbf{Tutored} high school and undergrad students in math and physics for competitive exams \hfill Sep.\ 2022 -- Apr.\ 2023
 \end{itemize}
 
-\noindent\textbf{Sports:} Handball (France's intercollegiate championship), Field and track (competitive), Weightlifting\\
-\textbf{Arts:} Drawing, Painting, Dancing\\
-\textbf{Miscellaneous:} Interested in geopolitics especially in Africa
+\noindent\textbf{Sports:} Handball (France's intercollegiate championship), Track \& Field (competitive), Weightlifting\\
+\textbf{Arts:} Drawing, Painting, Dancing
 
 \noindent\textbf{Awards}
 \begin{itemize}
   \item \textbf{French Government Excellence Scholarship}, awarded by the French Embassy in Burkina-Faso to pursue graduate studies at Ecole Polytechnique
-  \item \textbf{2\textsuperscript{nd} Place, 2021 Youth Olympiads, French Legion of Honor (SMLH),} Team-based cultural competition fostering teamwork, solidarity, and civic engagement.
-  \item \textbf{1\textsuperscript{st} place nationwide, 2020 Burkina Faso Advanced Scientific A-levels}; selected as spokesperson for 103 laureates across all categories.
-  \item \textbf{2020 Model Student Award,} recognizing outstanding school involvement, exemplary behavior, and academic performance within the Academy.
-  \item \textbf{2020-2019-2018 Excellence Awards,} awarded to the student with the highest academic score across all high school levels in PMK.
+  \item \textbf{2\textsuperscript{nd} Place, 2021 Youth Olympiads, French Legion of Honor (SMLH)}
+  \item \textbf{1\textsuperscript{st} place nationwide, 2020 Burkina Faso Advanced Scientific A-levels}; selected as spokesperson for 103 laureates across all categories
+  \item \textbf{2020 Model Student Award} and \textbf{2020-2019-2018 Excellence Awards}
 \end{itemize}
 
 \end{document}
