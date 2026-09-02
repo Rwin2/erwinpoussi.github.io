@@ -2,7 +2,7 @@
 % Single-column LaTeX CV matching the previous resume.pdf layout.
 \documentclass[10pt,letterpaper]{article}
 
-\usepackage[top=0.5in,bottom=0.5in,left=0.6in,right=0.6in]{geometry}
+\usepackage[top=0.4in,bottom=0.4in,left=0.55in,right=0.55in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
@@ -29,27 +29,27 @@
 \titleformat{\section}
   {\normalsize\bfseries\uppercase}
   {}{0em}{}[\vspace{-3pt}\titlerule\vspace{1pt}]
-\titlespacing*{\section}{0pt}{5pt}{2pt}
+\titlespacing*{\section}{0pt}{4pt}{1pt}
 
 % Bullet list tuning
 \setlist[itemize]{leftmargin=1.1em,itemsep=0pt,topsep=1pt,parsep=0pt}
-\setlength{\parskip}{2pt}
+\setlength{\parskip}{1pt}
 
 % Entry helper: \entry{title}{location}{date}
 \newcommand{\entry}[3]{%
-  \vspace{1pt}\noindent\textbf{#1} \textit{#2}\hfill #3\par}
+  \vspace{0pt}\noindent\textbf{#1} \textit{#2}\hfill #3\par}
 
 % Sub-entry (research project): \subentry{title}{date}
 \newcommand{\subentry}[2]{%
-  \vspace{1pt}\noindent\textbf{#1}\hfill #2\par}
+  \vspace{0pt}\noindent\textbf{#1}\hfill #2\par}
 
 \begin{document}
 
 %---------- Header ----------
 \begin{center}
-  {\LARGE \textbf{Erwin POUSSI}}\\[4pt]
-  \href{mailto:erwinpi@stanford.edu}{erwinpi@stanford.edu} \ \ $\vert$\ \ \textbf{US:} +1 650 250 7491 \ \ $\vert$\ \ \textbf{FR:} +33 (0)7 49 62 90 59 \ \ $\vert$\ \ \href{https://rwin2.github.io/erwinpoussi.github.io/}{Website} \ \ $\vert$\ \ \href{https://github.com/Rwin2}{GitHub} \ \ $\vert$\ \ \href{https://www.linkedin.com/in/erwin-poussi-a05099215/}{LinkedIn}\\[4pt]
-  \textit{MS student in Aeronautics \& Astronautics at Stanford, working on robot learning, motion planning, and LLM fine-tuning for autonomous systems, with a focus on sim-to-real transfer and imitation learning.}
+  {\LARGE \textbf{Erwin POUSSI}}\\[2pt]
+  \href{mailto:erwinpi@stanford.edu}{erwinpi@stanford.edu} \ \ $\vert$\ \ \textbf{US:} +1 650 250 7491 \ \ $\vert$\ \ \textbf{FR:} +33 (0)7 49 62 90 59 \ \ $\vert$\ \ \href{https://rwin2.github.io/erwinpoussi.github.io/}{Website} \ \ $\vert$\ \ \href{https://github.com/Rwin2}{GitHub} \ \ $\vert$\ \ \href{https://www.linkedin.com/in/erwin-poussi-a05099215/}{LinkedIn}\\[2pt]
+  \textit{MS in Aero/Astro at Stanford --- robot learning, motion planning, LLM fine-tuning, sim-to-real transfer.}
 \end{center}
 
 %---------- Education ----------
@@ -72,16 +72,16 @@
 
 \entry{Stanford Multi-Robot Systems Lab}{Palo Alto, CA}{Jan.\ 2025 -- Present}
 \begin{itemize}
-  \item \textbf{Research Assistant --- Vision-Language Robotics (VLA):} End-to-end pipeline for language-conditioned visual drone navigation via imitation learning and sim-to-real transfer.
-  \item Implemented RRT* for trajectory planning and an MPC controller as expert policy for synthetic data generation, achieving high demonstration success rates to bootstrap behavioral cloning.
-  \item Grounded natural language instructions to 3D Gaussian Splat scenes using CLIPSeg; trained BC + DAgger policies in simulation and transferred to real hardware, reaching \textbf{90\% navigation success rate} (up from 52\%). \textit{(\href{https://rwin2.github.io/erwinpoussi.github.io/project/language-steered-drones/}{project page})}
+  \item \textbf{Foundation Model Training --- Imitation Learning \& Sim-to-Real Transfer:} Trained vision-language-action (VLA) policies for autonomous drone navigation via behavioral cloning and DAgger.
+  \item Implemented RRT* trajectory planning + MPC expert policy for data generation; grounded language instructions to 3D Gaussian Splat scenes via CLIPSeg; trained BC + DAgger policies, reaching \textbf{90\% navigation success} (up from 52\%). \textit{(\href{https://rwin2.github.io/erwinpoussi.github.io/project/language-steered-drones/}{project page})}
+  \item \textbf{GAIT --- Agentic Scene Understanding for Open-Vocabulary Navigation} (Jun.--Sep.\ 2026): Built a graph-memory architecture for VLA models leveraging online semantic scene graph construction to enable open-vocabulary navigation with interrupt-triggered re-planning. \textit{(\href{https://rwin2.github.io/erwinpoussi.github.io/project/gait/}{project page})}
 \end{itemize}
 
 \entry{Stanford School of Medicine, Qiu Lab}{Palo Alto, CA}{Oct.\ 2025 -- Present}
 \begin{itemize}
-  \item \textbf{ML Researcher --- Pantheon-CLI:} Multi-agent workflow orchestration framework for autonomous scientific discovery, combining LLM reasoning with tool-augmented inference for genomic analysis.
-  \item Implemented an actor-critic RL module for autonomous gene panel selection in single-cell transcriptomics (scRNA-seq), optimizing clustering fidelity (ARI) under panel-size constraints.
-  \item Fine-tuned Qwen3 LLMs using SFT and RLOO (reinforcement learning from verifiable rewards) to power a self-evolving code-generation agent backbone. \textit{(\href{https://rwin2.github.io/erwinpoussi.github.io/publication/xu-2026-pantheonos/}{project page})}
+  \item \textbf{ML Researcher --- \href{https://www.pantheon-os.com/}{Pantheon-CLI}:} Multi-agent LLM framework for autonomous scientific discovery with tool-augmented inference for genomic analysis.
+  \item Implemented actor-critic RL for gene panel selection in scRNA-seq; fine-tuned Qwen3 LLMs via SFT and RLOO to power a self-evolving code-generation agent backbone. \textit{(\href{https://rwin2.github.io/erwinpoussi.github.io/publication/xu-2026-pantheonos/}{project page})}
+  \item \textbf{Virtual Embryo Challenge --- 3D Convolutional Models for Embryogenesis} (Jun.--Sep.\ 2026): Training foundational 3D convolutional models to reproduce embryogenesis, predicting cell-level gene expression dynamics and morphogenesis; co-building the \href{https://virtualembryo.ai/challenge}{Virtual Embryo Challenge}. \textit{(\href{https://rwin2.github.io/erwinpoussi.github.io/project/virtual-embryo/}{project page})}
 \end{itemize}
 
 \entry{Stevens Institute of Technology, RRG}{Hoboken, NJ}{Apr.\ 2025 -- Aug.\ 2025}
@@ -99,7 +99,7 @@
 
 \subentry{Guidance System for Autonomous Visual-Based Docking --- Nyx Spacecraft (CSEP)}{Sep.\ 2023 -- May 2024}
 \begin{itemize}
-  \item Undergraduate research thesis developing the vision-based navigation algorithm for the Nyx spacecraft, selected by Axiom to support the ISS by 2027. Supervised by The Exploration Company in collaboration with Polytechnique Space Center. \textit{(\href{https://rwin2.github.io/erwinpoussi.github.io/project/visual-based-docking/}{project page})}
+  \item Undergraduate thesis on vision-based navigation for the Nyx spacecraft (selected by Axiom for ISS support). Supervised by The Exploration Company with Polytechnique Space Center. \textit{(\href{https://rwin2.github.io/erwinpoussi.github.io/project/visual-based-docking/}{project page})}
 \end{itemize}
 
 %---------- Skills ----------
@@ -117,23 +117,9 @@
 %---------- Extracurriculars ----------
 \section{Extracurricular Activities}
 
-\noindent\textbf{Volunteering}
-\begin{itemize}
-  \item \textbf{Stanford Black Graduate Student Association}, Fundraising Chair \hfill Sep.\ 2025 -- Present
-  \item \textbf{Cheer up,} Cancer support non-profit: Outreach and External Relations \hfill Oct.\ 2023 -- Apr.\ 2025
-  \item \textbf{XProjets,} Student consulting firm: Project Manager, Business Development \hfill Jan.\ 2024 -- 2025
-  \item \textbf{Tutored} high school and undergrad students in math and physics for competitive exams \hfill Sep.\ 2022 -- Apr.\ 2023
-\end{itemize}
+\noindent\textbf{Volunteering:} Stanford BGSA Fundraising Chair (2025--Present) $\cdot$ Cheer Up cancer nonprofit (2023--2025) $\cdot$ XProjets consulting PM (2024--2025) $\cdot$ Math/physics tutor (2022--2023)\\
+\textbf{Sports:} Handball (France's intercollegiate championship), Track \& Field, Weightlifting \quad \textbf{Arts:} Drawing, Painting, Dancing
 
-\noindent\textbf{Sports:} Handball (France's intercollegiate championship), Track \& Field (competitive), Weightlifting\\
-\textbf{Arts:} Drawing, Painting, Dancing
-
-\noindent\textbf{Awards}
-\begin{itemize}
-  \item \textbf{French Government Excellence Scholarship}, awarded by the French Embassy in Burkina-Faso to pursue graduate studies at Ecole Polytechnique
-  \item \textbf{2\textsuperscript{nd} Place, 2021 Youth Olympiads, French Legion of Honor (SMLH)}
-  \item \textbf{1\textsuperscript{st} place nationwide, 2020 Burkina Faso Advanced Scientific A-levels}; selected as spokesperson for 103 laureates across all categories
-  \item \textbf{2020 Model Student Award} and \textbf{2020-2019-2018 Excellence Awards}
-\end{itemize}
+\noindent\textbf{Awards:} French Government Excellence Scholarship (Ecole Polytechnique) $\cdot$ 2\textsuperscript{nd} Place, 2021 Youth Olympiads, French Legion of Honor $\cdot$ 1\textsuperscript{st} nationwide, 2020 Burkina Faso Scientific A-levels $\cdot$ 2020 Model Student Award $\cdot$ 2020--2018 Excellence Awards
 
 \end{document}
