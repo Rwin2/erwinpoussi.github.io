@@ -17,7 +17,7 @@ This project trains **foundational 3D convolutional models** to reproduce **embr
 
 The approach leverages volumetric deep learning architectures to model the spatiotemporal evolution of developing embryos, learning from multi-modal developmental biology datasets that combine single-cell transcriptomics with 3D imaging.
 
-I am one of the participants of the **Virtual Embryo Challenge** — a community benchmark for computational models of embryonic development.
+I am one of the builders of the **Virtual Embryo Challenge** — a community benchmark for computational models of embryonic development.
 
 **[Virtual Embryo Challenge](https://virtualembryo.ai/challenge)** — check it out and don't hesitate to participate!
 
