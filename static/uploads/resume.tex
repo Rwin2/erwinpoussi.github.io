@@ -1,5 +1,4 @@
 % Erwin Poussi — CV
-% Single-column LaTeX CV matching the previous resume.pdf layout.
 \documentclass[10pt,letterpaper]{article}
 
 \usepackage[top=0.3in,bottom=0.2in,left=0.5in,right=0.5in]{geometry}
@@ -29,107 +28,94 @@
 \titleformat{\section}
   {\normalsize\bfseries\uppercase}
   {}{0em}{}[\vspace{-3pt}\titlerule\vspace{1pt}]
-\titlespacing*{\section}{0pt}{3pt}{0pt}
+\titlespacing*{\section}{0pt}{5pt}{2pt}
 
 % Bullet list tuning
-\setlist[itemize]{leftmargin=1.1em,itemsep=0pt,topsep=0pt,parsep=0pt}
+\setlist[itemize]{leftmargin=1.1em,itemsep=1pt,topsep=1pt,parsep=0pt}
 \setlength{\parskip}{0pt}
 
 % Entry helper: \entry{title}{location}{date}
 \newcommand{\entry}[3]{%
-  \vspace{0pt}\noindent\textbf{#1} \textit{#2}\hfill #3\par}
-
-% Sub-entry (research project): \subentry{title}{date}
-\newcommand{\subentry}[2]{%
-  \vspace{0pt}\noindent\textbf{#1}\hfill #2\par}
+  \vspace{2pt}\noindent\textbf{#1} \textit{#2}\hfill #3\par}
 
 \begin{document}
 
 %---------- Header ----------
 \begin{center}
   {\LARGE \textbf{Erwin POUSSI}}\\[2pt]
-  \href{mailto:erwinpi@stanford.edu}{erwinpi@stanford.edu} \ \ $\vert$\ \ \textbf{US:} +1 650 250 7491 \ \ $\vert$\ \ \textbf{FR:} +33 (0)7 49 62 90 59 \ \ $\vert$\ \ \href{https://rwin2.github.io/erwinpoussi.github.io/}{Website} \ \ $\vert$\ \ \href{https://github.com/Rwin2}{GitHub} \ \ $\vert$\ \ \href{https://www.linkedin.com/in/erwin-poussi-a05099215/}{LinkedIn}\\[2pt]
-  \textit{Building autonomous systems that learn to act --- from foundation model training and sim-to-real robot deployment to LLM-driven scientific agents.}
+  \href{mailto:erwinpi@stanford.edu}{erwinpi@stanford.edu} \ \ $\vert$\ \ +1 650 250 7491 \ \ $\vert$\ \ +33 (0)7 49 62 90 59 \ \ $\vert$\ \ \href{https://rwin2.github.io/erwinpoussi.github.io/}{Website} \ \ $\vert$\ \ \href{https://github.com/Rwin2}{GitHub} \ \ $\vert$\ \ \href{https://www.linkedin.com/in/erwin-poussi-a05099215/}{LinkedIn}
 \end{center}
 
 %---------- Education ----------
 \section{Education}
 
-\entry{Stanford University,}{Palo Alto (CA)}{2025 -- 2027}
+\entry{Stanford University,}{Palo Alto, CA}{}
 \begin{itemize}
   \item MS in Aeronautics \& Astronautics \hfill GPA: \textbf{4.1/4.0}
-  \item Relevant coursework: \textit{Principles of Robot Autonomy (AA274A/CS237A), Introduction to Robotics (CS223A), Decision Making under Uncertainty (AA228/CS238), Optimal and Learning-Based Control (AA203), Deep Learning \& Reinforcement Learning (CS224R).}
+  \item Courses: Robot Autonomy, Robotics, Decision Making under Uncertainty, Optimal \& Learning-Based Control, Deep RL
 \end{itemize}
 
-\entry{Ecole Polytechnique,}{Palaiseau (FRA)}{2020 -- 2025}
+\entry{Ecole Polytechnique,}{Palaiseau, France}{}
 \begin{itemize}
-  \item Master's level in Mechanical Engineering, concentration in Autonomy, minor in Entrepreneurship. GPA: \textbf{3.96/4.0}
-  \item Relevant coursework: \textit{Advanced Machine Learning for Autonomous Agents, Optimization and Control, Statistics.}
+  \item MEng in Mechanical Engineering, concentration in Autonomy, minor in Entrepreneurship \hfill GPA: \textbf{3.96/4.0}
 \end{itemize}
 
-%---------- Work ----------
-\section{Work Experience}
+%---------- Experience ----------
+\section{Experience}
 
-\entry{Stanford Multi-Robot Systems Lab}{Palo Alto, CA}{Jan.\ 2025 -- Present}
+\entry{Graduate Research Assistant,}{Stanford Multi-Robot Systems Lab (Profs.\ Schwager \& Pavone)}{Jan.\ 2025 -- Present}
 \begin{itemize}
-  \item \textbf{VLA Training --- Imitation Learning \& Sim-to-Real} (Jan.--Apr.\ 2025, Prof.\ Schwager): Trained VLA policies for autonomous drone navigation via behavioral cloning and DAgger. \textit{(\href{https://rwin2.github.io/erwinpoussi.github.io/project/language-steered-drones/}{project page})}
-  \begin{itemize}[topsep=0pt]
-    \item Reached \textbf{90\% navigation success} (up from 52\%) using RRT* planning, MPC expert demonstrations, and CLIPSeg grounding to 3D Gaussian Splats.
-  \end{itemize}
-  \item \textbf{GAIT --- Agentic Scene Understanding for Robot Navigation} (Jun.--Sep.\ 2026, Prof.\ Schwager): Built a graph-memory architecture and robotic navigation framework for VLA models, leveraging online semantic scene graph construction with interrupt-triggered re-planning. \textit{(\href{https://rwin2.github.io/erwinpoussi.github.io/project/gait/}{project page})}
-  \item \textbf{GAIT-Manip --- Whole-Body Robot Control for Loco-Manipulation} (Sep.--Dec.\ 2026, Profs.\ Pavone \& Schwager): Whole-body control of G1 and Spot robots for loco-manipulation, using GAIT scene reasoning. \textit{(\href{https://rwin2.github.io/erwinpoussi.github.io/project/gait-manip/}{project page})}
+  \item designed and deployed whole-body loco-manipulation controllers for G1 and Spot robots using semantic scene graph reasoning (\href{https://rwin2.github.io/erwinpoussi.github.io/project/gait-manip/}{GAIT-Manip})
+  \item built a graph-memory architecture for VLA robot navigation with online scene graph construction and interrupt-driven re-planning (\href{https://rwin2.github.io/erwinpoussi.github.io/project/gait/}{GAIT})
+  \item trained VLA policies for drone navigation via behavioral cloning and DAgger; \textbf{90\% success} (from 52\%) with RRT*, MPC expert demos, and CLIPSeg on 3D Gaussian Splats (\href{https://rwin2.github.io/erwinpoussi.github.io/project/language-steered-drones/}{project})
 \end{itemize}
 
-\entry{Stanford School of Medicine, Qiu Lab (Prof.\ Qiu)}{Palo Alto, CA}{Oct.\ 2025 -- Present}
+\entry{ML Researcher,}{Stanford School of Medicine, Qiu Lab (Prof.\ Qiu)}{Oct.\ 2025 -- Present}
 \begin{itemize}
-  \item \textbf{ML Researcher --- \href{https://www.pantheon-os.com/}{Pantheon-CLI}:} Multi-agent LLM framework for autonomous scientific discovery with tool-augmented inference for genomic analysis. \textit{(\href{https://rwin2.github.io/erwinpoussi.github.io/publication/xu-2026-pantheonos/}{project page})}
-  \begin{itemize}[topsep=0pt]
-    \item Fine-tuned Qwen3 LLMs via SFT + RLOO for a self-evolving agent backbone; built actor-critic RL for gene panel selection in scRNA-seq.
-  \end{itemize}
-  \item \textbf{Virtual Embryo Challenge --- 3D Convolutional Models for Embryogenesis} (Jun.--Sep.\ 2026): Training foundational 3D models to reproduce embryogenesis at both cell-level gene expression and morphogenesis; co-building the \href{https://virtualembryo.ai/challenge}{Virtual Embryo Challenge}. \textit{(\href{https://rwin2.github.io/erwinpoussi.github.io/project/virtual-embryo/}{project page})}
+  \item developed \href{https://www.pantheon-os.com/}{Pantheon-CLI}, a multi-agent LLM framework for autonomous genomic discovery; fine-tuned Qwen3 via SFT + RLOO; actor-critic RL for gene panel selection in scRNA-seq
+  \item trained foundational 3D convolutional models for embryogenesis; co-built the \href{https://virtualembryo.ai/challenge}{Virtual Embryo Challenge} platform (\href{https://rwin2.github.io/erwinpoussi.github.io/project/virtual-embryo/}{project})
 \end{itemize}
 
-\entry{Inspirit AI}{San Francisco, CA}{Jul.\ 2026 -- Aug.\ 2026}
+\entry{AI Instructor,}{Inspirit AI}{Jul.\ 2026 -- Aug.\ 2026}
 \begin{itemize}
-  \item \textbf{AI Instructor:} Taught ML, neural networks, and AI for social good to scholars; designed hands-on sessions and guided real-world AI projects culminating in deployed applications.
+  \item taught ML and neural networks to scholars; designed hands-on sessions and guided real-world AI projects
 \end{itemize}
 
-\entry{Stevens Institute of Technology, RRG (Prof.\ Rabinovitch)}{Hoboken, NJ}{Apr.\ 2025 -- Aug.\ 2025}
+\entry{Research Intern,}{Stevens Institute of Technology (Prof.\ Rabinovitch)}{Apr.\ 2025 -- Aug.\ 2025}
 \begin{itemize}
-  \item \textbf{Research Intern --- ML-Based Aerodynamic Modeling:} Multi-fidelity ML framework (random forests + genetic algorithms) for parachute permeability under rarefied conditions; \textbf{$<$1\% mean error}. \textit{(\href{https://rwin2.github.io/erwinpoussi.github.io/project/parachute-opt/}{project page})}
+  \item multi-fidelity ML framework (random forests + genetic algorithms) for parachute permeability under rarefied conditions; \textbf{$<$1\% mean error}
 \end{itemize}
 
-%---------- Research ----------
-\section{Selected Research}
-
-\subentry{Reinforcement Learning for Algorithmic Trading}{Jan.\ 2025 -- Apr.\ 2025}
+\entry{Undergraduate Thesis,}{École Polytechnique / The Exploration Company}{Sep.\ 2023 -- May 2024}
 \begin{itemize}
-  \item Built a custom high-frequency market simulator and trained agents with PPO, Actor-Critic, and DQL, focusing on reward-free exploration, robustness to distribution shifts, and real-time decision-making.
+  \item vision-based guidance system for autonomous docking of the \href{https://rwin2.github.io/erwinpoussi.github.io/project/visual-based-docking/}{Nyx spacecraft} (selected by Axiom for ISS support)
 \end{itemize}
-
-\subentry{Guidance System for Autonomous Visual-Based Docking --- Nyx Spacecraft (CSEP)}{Sep.\ 2023 -- May 2024}
-\begin{itemize}
-  \item Undergraduate thesis on vision-based navigation for the Nyx spacecraft (selected by Axiom for ISS support). Supervised by The Exploration Company with Polytechnique Space Center. \textit{(\href{https://rwin2.github.io/erwinpoussi.github.io/project/visual-based-docking/}{project page})}
-\end{itemize}
-
-%---------- Skills ----------
-\section{Technical Skills}
-
-\noindent\textbf{Programming \& Frameworks}: Python, PyTorch, CUDA, ROS2, MuJoCo, Hugging Face / Transformers, ACADOS, GSplat, GTSAM, CLIPSeg, Habitat-Sim, W\&B\\
-\textbf{Methods}: Behavioral cloning, DAgger, PPO, Actor-Critic, DQL, RRT*, MPC, SFT, RLOO, RLVR, LLM fine-tuning, imitation learning, sim-to-real transfer, motion planning, trajectory optimization\\
-\textbf{Languages}: French (native), English (TOEFL 109), Mooré (fluent), German (basic)
 
 %---------- Publications ----------
 \section{Publications}
 
-\noindent\textbf{Xu, W., Poussi, E.,} et al. \textit{PantheonOS: An Evolvable Multi-Agent Framework for Automatic Genomics Discovery.} Preprint, 2026. \href{https://doi.org/10.64898/2026.02.26.707870}{DOI: 10.64898/2026.02.26.707870}
+\noindent\textbf{Xu, W., Poussi, E.,} et al.\ \textit{PantheonOS: An Evolvable Multi-Agent Framework for Automatic Genomics Discovery.} Preprint, 2026. \href{https://doi.org/10.64898/2026.02.26.707870}{DOI}
+
+%---------- Skills ----------
+\section{Technical Skills}
+
+\noindent\textbf{Programming \& Frameworks}: Python, C/C++, PyTorch, CUDA, ROS2, MuJoCo, Hugging Face, ACADOS, GSplat, GTSAM, CLIPSeg, Habitat-Sim\\
+\textbf{Languages}: French (native), English (TOEFL 109), Mooré (fluent), German (basic)
+
+%---------- Courses & Projects ----------
+\section{Projects}
+
+\noindent\textbf{RL for Algorithmic Trading:} custom high-frequency market simulator with PPO, Actor-Critic, and DQL agents with reward-free exploration.
+
+%---------- Awards ----------
+\section{Awards}
+
+\noindent French Gov.\ Excellence Scholarship $\cdot$ 2\textsuperscript{nd}, 2021 Youth Olympiads (Legion of Honor) $\cdot$ 1\textsuperscript{st} nationwide, 2020 Burkina Faso A-levels
 
 %---------- Extracurriculars ----------
-\section{Extracurricular Activities}
+\section{Extra-Curricular Activities}
 
-\noindent\textbf{Volunteering:} Stanford BGSA Fundraising Chair (2025--Present) $\cdot$ Cheer Up cancer nonprofit (2023--2025) $\cdot$ XProjets consulting PM (2024--2025) $\cdot$ Math/physics tutor (2022--2023)\\
-\textbf{Sports:} Handball (France's intercollegiate championship), Track \& Field, Weightlifting \quad \textbf{Arts:} Drawing, Painting, Dancing
-
-\noindent\textbf{Awards:} French Gov.\ Excellence Scholarship $\cdot$ 2\textsuperscript{nd}, 2021 Youth Olympiads (Legion of Honor) $\cdot$ 1\textsuperscript{st} nationwide, 2020 Burkina Faso A-levels $\cdot$ 2020--18 Excellence Awards
+\noindent\textbf{Stanford BGSA} Fundraising Chair $\cdot$ \textbf{Cheer Up} cancer nonprofit $\cdot$ \textbf{XProjets} consulting PM\\
+\textbf{Sports:} Handball (France intercollegiate championship), Track \& Field \quad \textbf{Arts:} Drawing, Painting, Dancing
 
 \end{document}
