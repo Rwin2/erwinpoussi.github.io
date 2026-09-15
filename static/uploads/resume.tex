@@ -2,7 +2,7 @@
 % Single-column LaTeX CV matching the previous resume.pdf layout.
 \documentclass[10pt,letterpaper]{article}
 
-\usepackage[top=0.4in,bottom=0.3in,left=0.55in,right=0.55in]{geometry}
+\usepackage[top=0.3in,bottom=0.2in,left=0.5in,right=0.5in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
@@ -29,11 +29,11 @@
 \titleformat{\section}
   {\normalsize\bfseries\uppercase}
   {}{0em}{}[\vspace{-3pt}\titlerule\vspace{1pt}]
-\titlespacing*{\section}{0pt}{4pt}{1pt}
+\titlespacing*{\section}{0pt}{3pt}{0pt}
 
 % Bullet list tuning
-\setlist[itemize]{leftmargin=1.1em,itemsep=0pt,topsep=1pt,parsep=0pt}
-\setlength{\parskip}{1pt}
+\setlist[itemize]{leftmargin=1.1em,itemsep=0pt,topsep=0pt,parsep=0pt}
+\setlength{\parskip}{0pt}
 
 % Entry helper: \entry{title}{location}{date}
 \newcommand{\entry}[3]{%
@@ -72,14 +72,15 @@
 
 \entry{Stanford Multi-Robot Systems Lab}{Palo Alto, CA}{Jan.\ 2025 -- Present}
 \begin{itemize}
-  \item \textbf{Foundation Model Training --- Imitation Learning \& Sim-to-Real Transfer:} Trained vision-language-action (VLA) policies for autonomous drone navigation via behavioral cloning and DAgger. \textit{(\href{https://rwin2.github.io/erwinpoussi.github.io/project/language-steered-drones/}{project page})}
+  \item \textbf{VLA Training --- Imitation Learning \& Sim-to-Real} (Jan.--Apr.\ 2025, Prof.\ Schwager): Trained VLA policies for autonomous drone navigation via behavioral cloning and DAgger. \textit{(\href{https://rwin2.github.io/erwinpoussi.github.io/project/language-steered-drones/}{project page})}
   \begin{itemize}[topsep=0pt]
     \item Reached \textbf{90\% navigation success} (up from 52\%) using RRT* planning, MPC expert demonstrations, and CLIPSeg grounding to 3D Gaussian Splats.
   \end{itemize}
-  \item \textbf{GAIT --- Agentic Scene Understanding for Robotic Open-Vocabulary Navigation} (Jun.--Sep.\ 2026): Built a graph-memory architecture and robotic navigation framework for VLA models, leveraging online semantic scene graph construction with interrupt-triggered re-planning. \textit{(\href{https://rwin2.github.io/erwinpoussi.github.io/project/gait/}{project page})}
+  \item \textbf{GAIT --- Agentic Scene Understanding for Robot Navigation} (Jun.--Sep.\ 2026, Prof.\ Schwager): Built a graph-memory architecture and robotic navigation framework for VLA models, leveraging online semantic scene graph construction with interrupt-triggered re-planning. \textit{(\href{https://rwin2.github.io/erwinpoussi.github.io/project/gait/}{project page})}
+  \item \textbf{GAIT-Manip --- Whole-Body Robot Control for Loco-Manipulation} (Sep.--Dec.\ 2026, Profs.\ Pavone \& Schwager): Whole-body control of G1 and Spot robots for loco-manipulation, using GAIT scene reasoning. \textit{(\href{https://rwin2.github.io/erwinpoussi.github.io/project/gait-manip/}{project page})}
 \end{itemize}
 
-\entry{Stanford School of Medicine, Qiu Lab}{Palo Alto, CA}{Oct.\ 2025 -- Present}
+\entry{Stanford School of Medicine, Qiu Lab (Prof.\ Qiu)}{Palo Alto, CA}{Oct.\ 2025 -- Present}
 \begin{itemize}
   \item \textbf{ML Researcher --- \href{https://www.pantheon-os.com/}{Pantheon-CLI}:} Multi-agent LLM framework for autonomous scientific discovery with tool-augmented inference for genomic analysis. \textit{(\href{https://rwin2.github.io/erwinpoussi.github.io/publication/xu-2026-pantheonos/}{project page})}
   \begin{itemize}[topsep=0pt]
@@ -93,7 +94,7 @@
   \item \textbf{AI Instructor:} Taught ML, neural networks, and AI for social good to scholars; designed hands-on sessions and guided real-world AI projects culminating in deployed applications.
 \end{itemize}
 
-\entry{Stevens Institute of Technology, RRG}{Hoboken, NJ}{Apr.\ 2025 -- Aug.\ 2025}
+\entry{Stevens Institute of Technology, RRG (Prof.\ Rabinovitch)}{Hoboken, NJ}{Apr.\ 2025 -- Aug.\ 2025}
 \begin{itemize}
   \item \textbf{Research Intern --- ML-Based Aerodynamic Modeling:} Multi-fidelity ML framework (random forests + genetic algorithms) for parachute permeability under rarefied conditions; \textbf{$<$1\% mean error}. \textit{(\href{https://rwin2.github.io/erwinpoussi.github.io/project/parachute-opt/}{project page})}
 \end{itemize}
