@@ -1,121 +1,54 @@
-% Erwin Poussi — CV
 \documentclass[10pt,letterpaper]{article}
-
-\usepackage[top=0.3in,bottom=0.2in,left=0.5in,right=0.5in]{geometry}
+\usepackage[top=0.35in,bottom=0.35in,left=0.35in,right=0.35in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage{lmodern}
-\usepackage{microtype}
-\usepackage{enumitem}
-\usepackage{titlesec}
-\usepackage{hyperref}
-\usepackage{xcolor}
-\usepackage{tabularx}
-\usepackage{parskip}
-
-\hypersetup{
-  colorlinks=true,
-  urlcolor=blue!60!black,
-  linkcolor=blue!60!black,
-  pdftitle={Erwin Poussi - Resume},
-  pdfauthor={Erwin Poussi}
-}
-
-\pagestyle{empty}
-\setlength{\parindent}{0pt}
-
-% Section header: ALLCAPS, bold, with rule below
-\titleformat{\section}
-  {\normalsize\bfseries\uppercase}
-  {}{0em}{}[\vspace{-3pt}\titlerule\vspace{1pt}]
-\titlespacing*{\section}{0pt}{5pt}{2pt}
-
-% Bullet list tuning
-\setlist[itemize]{leftmargin=1.1em,itemsep=1pt,topsep=1pt,parsep=0pt}
-\setlength{\parskip}{0pt}
-
-% Entry helper: \entry{title}{location}{date}
-\newcommand{\entry}[3]{%
-  \vspace{2pt}\noindent\textbf{#1} \textit{#2}\hfill #3\par}
-
+\usepackage{lmodern,microtype,xcolor,hyperref}
+\renewcommand{\familydefault}{\sfdefault}
+\definecolor{navy}{HTML}{193E54}
+\hypersetup{colorlinks=true,urlcolor=blue,pdftitle={Erwin Poussi - Resume},pdfauthor={Erwin Poussi}}
+\pagestyle{empty}\setlength{\parindent}{0pt}\setlength{\parskip}{1pt}
 \begin{document}
-
-%---------- Header ----------
-\begin{center}
-  {\LARGE \textbf{Erwin POUSSI}}\\[2pt]
-  \href{mailto:erwinpi@stanford.edu}{erwinpi@stanford.edu} \ \ $\vert$\ \ +1 650 250 7491 \ \ $\vert$\ \ +33 (0)7 49 62 90 59 \ \ $\vert$\ \ \href{https://rwin2.github.io/erwinpoussi.github.io/}{Website} \ \ $\vert$\ \ \href{https://github.com/Rwin2}{GitHub} \ \ $\vert$\ \ \href{https://www.linkedin.com/in/erwin-poussi-a05099215/}{LinkedIn}
-\end{center}
-
-%---------- Education ----------
-\section{Education}
-
-\entry{Stanford University,}{Palo Alto, CA}{}
-\begin{itemize}
-  \item MS in Aeronautics \& Astronautics \hfill GPA: \textbf{4.1/4.0}
-  \item Courses: Robot Autonomy, Robotics, Decision Making under Uncertainty, Optimal \& Learning-Based Control, Deep RL
-\end{itemize}
-
-\entry{Ecole Polytechnique,}{Palaiseau, France}{}
-\begin{itemize}
-  \item MEng in Mechanical Engineering, concentration in Autonomy, minor in Entrepreneurship \hfill GPA: \textbf{3.96/4.0}
-\end{itemize}
-
-%---------- Experience ----------
-\section{Experience}
-
-\entry{ML Researcher,}{Stanford School of Medicine, Qiu Lab (Prof.\ Qiu)}{Oct.\ 2025 -- Present}
-\begin{itemize}
-  \item developed \href{https://www.pantheon-os.com/}{Pantheon-CLI}, a multi-agent LLM framework for autonomous genomic discovery; fine-tuned Qwen3 via SFT + RLOO; actor-critic RL for gene panel selection in scRNA-seq
-  \item trained foundational 3D convolutional models for embryogenesis; co-built the \href{https://virtualembryo.ai/challenge}{Virtual Embryo Challenge} platform (\href{https://rwin2.github.io/erwinpoussi.github.io/project/virtual-embryo/}{project})
-\end{itemize}
-
-\entry{Graduate Research Assistant,}{Stanford Multi-Robot Systems Lab (Profs.\ Schwager \& Pavone)}{Jan.\ 2025 -- Present}
-\begin{itemize}
-  \item designed and deployed whole-body loco-manipulation controllers for G1 and Spot robots using semantic scene graph reasoning (\href{https://rwin2.github.io/erwinpoussi.github.io/project/gait-manip/}{GAIT-Manip})
-  \item built a graph-memory architecture for VLA robot navigation with online scene graph construction and interrupt-driven re-planning (\href{https://rwin2.github.io/erwinpoussi.github.io/project/gait/}{GAIT})
-  \item trained VLA policies for drone navigation via behavioral cloning and DAgger; \textbf{90\% success} (from 52\%) with RRT*, MPC expert demos, and CLIPSeg on 3D Gaussian Splats (\href{https://rwin2.github.io/erwinpoussi.github.io/project/language-steered-drones/}{project})
-\end{itemize}
-
-\entry{AI Instructor,}{Inspirit AI}{Jul.\ 2026 -- Aug.\ 2026}
-\begin{itemize}
-  \item taught ML and neural networks to scholars; designed hands-on sessions and guided real-world AI projects
-\end{itemize}
-
-\entry{Research Intern,}{Stevens Institute of Technology (Prof.\ Rabinovitch)}{Apr.\ 2025 -- Aug.\ 2025}
-\begin{itemize}
-  \item multi-fidelity ML framework (random forests + genetic algorithms) for parachute permeability under rarefied conditions; \textbf{$<$1\% mean error}
-\end{itemize}
-
-\entry{Undergraduate Thesis,}{École Polytechnique / The Exploration Company}{Sep.\ 2023 -- May 2024}
-\begin{itemize}
-  \item vision-based guidance system for autonomous docking of the \href{https://rwin2.github.io/erwinpoussi.github.io/project/visual-based-docking/}{Nyx spacecraft} (selected by Axiom for ISS support)
-\end{itemize}
-
-%---------- Publications ----------
-\section{Publications}
-
-\noindent\textbf{Xu, W., Poussi, E.,} et al.\ \textit{PantheonOS: An Evolvable Multi-Agent Framework for Automatic Genomics Discovery.} Preprint, 2026. \href{https://doi.org/10.64898/2026.02.26.707870}{DOI}
-
-%---------- Skills ----------
-\section{Technical Skills}
-
-\noindent\textbf{Programming \& Frameworks}: Python, C/C++, PyTorch, CUDA, ROS2, MuJoCo, Hugging Face, ACADOS, GSplat, GTSAM, CLIPSeg, Habitat-Sim\\
-\textbf{Languages}: French (native), English (TOEFL 109), Mooré (fluent), German (basic)
-
-%---------- Courses & Projects ----------
-\section{Projects}
-
-\noindent\textbf{RL for Algorithmic Trading:} custom high-frequency market simulator with PPO, Actor-Critic, and DQL agents with reward-free exploration.
-
-%---------- Awards ----------
-\section{Awards}
-
-\noindent French Gov.\ Excellence Scholarship $\cdot$ 2\textsuperscript{nd}, 2021 Youth Olympiads (Legion of Honor) $\cdot$ 1\textsuperscript{st} nationwide, 2020 Burkina Faso A-levels
-
-%---------- Extracurriculars ----------
-\section{Extra-Curricular Activities}
-
-\noindent\textbf{Stanford BGSA} Fundraising Chair $\cdot$ \textbf{Cheer Up} cancer nonprofit $\cdot$ \textbf{XProjets} consulting PM\\
-\textbf{Sports:} Handball (France intercollegiate championship), Track \& Field \quad \textbf{Arts:} Drawing, Painting, Dancing
-
+\fontsize{10}{11}\selectfont
+{\fontsize{15}{17}\selectfont\color{navy}\textbf{ERWIN POUSSI}}\par
+\textbf{Robotics \& Autonomy | Robot Learning \textbullet{} Scene Understanding \textbullet{} Loco-Manipulation}\par
+Palo Alto, CA  |  erwinpi@stanford.edu  |  +1 650 250 7491\par
+\vspace{3pt}{\color{navy}EDUCATION}\par\vspace{1pt}{\color{navy!40}\hrule}\vspace{2pt}
+\vspace{2pt}\textbf{Stanford University} | Stanford, CA\par
+M.S. in Aeronautics \& Astronautics\hfill GPA: 4.1/4.0\par
+Coursework: \textit{Robot Autonomy; Decision Making under Uncertainty; Optimal \& Learning-Based Control; Deep RL.}\par
+\vspace{2pt}\textbf{École Polytechnique} | Palaiseau, France\par
+M.Eng. in Computer Science \& Mechanical Engineering; Autonomy concentration; Entrepreneurship minor.\hfill GPA: 3.93/4.0\par
+\vspace{3pt}{\color{navy}\textbf{WORK \& RESEARCH EXPERIENCE}}\par\vspace{1pt}{\color{navy!40}\hrule}\vspace{2pt}
+\vspace{2pt}\textbf{Robotics Researcher --- Robot Learning \& Autonomy}\hfill 2026--Present\par
+Stanford University | Multi-Robot Systems Lab \& Autonomous Systems Lab\par
+\hangindent=0.7em\hangafter=1 \textbullet{} Generated synthetic data using RRT-planned trajectories in simulated 3D Gaussian Splatting environments and extended SINGER with goal-conditioned imitation learning (DAgger), improving sample efficiency and raising navigation success \textbf{from 52\% to 90\%}. \href{https://rwin2.github.io/erwinpoussi.github.io/project/language-steered-drones/}{\underline{view work}}\par
+\hangindent=0.7em\hangafter=1 \textbullet{} Developed GAIT for navigation toward language-specified targets, combining persistent scene memory with vision-language reasoning and motion planning; improved success while reducing reasoning calls and latency in controlled GOAT-Bench comparisons; working on sim-to-real transfer. \href{https://rwin2.github.io/erwinpoussi.github.io/project/gait/}{\underline{view work}}\par
+\hangindent=0.7em\hangafter=1 \textbullet{} Developing agentic robotics systems linking scene memory, grasping and whole-body motion planning for \textbf{G1 and Spot} robots through DARPA TIAMAT, working on sim-to-real transfer for locomotion and manipulation. \href{https://rwin2.github.io/erwinpoussi.github.io/project/gait-manip/}{\underline{view work}}\par
+\vspace{2pt}\textbf{AI Researcher --- Reinforcement Learning \& Scientific Agents}\hfill Oct. 2025--Present\par
+Stanford School of Medicine | Qiu Lab\par
+\hangindent=0.7em\hangafter=1 \textbullet{} Formulated gene-panel selection as a sequential decision problem and developed \textbf{actor--critic RL} to refine gene combinations; on renal carcinoma data, a \textbf{500-gene panel} outperformed conventional selectors in clustering agreement while preserving cell-type structure comparable to using 20,000+ genes. \href{https://rwin2.github.io/erwinpoussi.github.io/project/learning-optimal-gene-panels-with-reinforcement-learning/}{\underline{view work}}\par
+\hangindent=0.7em\hangafter=1 \textbullet{} Led research in 4D embryo alignment for PantheonOS, coupling optimal transport with spatial registration to map cells across developmental stages; improved alignment consistency by 21\% on embryonic heart data against a reference set of allowed cell-fate transitions. \href{https://rwin2.github.io/erwinpoussi.github.io/project/pantheon-gene-panel-selection/}{\underline{view work}}\par
+\hangindent=0.7em\hangafter=1 \textbullet{} Developed a generative virtual embryo model that reconstructs tissue anatomy from a single computational seed cell using neural cellular automata and a neural decoder; contributing to the \textbf{Virtual Embryo Challenge}. \href{https://rwin2.github.io/erwinpoussi.github.io/project/virtual-embryo/}{\underline{Virtual Embryo Challenge}}\par
+\vspace{2pt}\textbf{Machine Learning \& Simulation Intern}\hfill Apr.--Aug. 2025\par
+Stevens Institute of Technology | Computational Fluid Dynamics\par
+\hangindent=0.7em\hangafter=1 \textbullet{} Ran 80,000+ flow simulations and combined physics-informed surrogate modeling with optimization across simulation fidelities for Mars-landing parachute fabric; optimized pore geometries reproduced experimental permeability with \textbf{\textless{}1\% mean error}. \href{https://rwin2.github.io/erwinpoussi.github.io/project/parachute-opt/}{\underline{view work}}\par
+\vspace{2pt}\textbf{Multiphysics Simulation Intern}\hfill Jun.--Sep. 2024\par
+Daher Aerospace\par
+\hangindent=0.7em\hangafter=1 \textbullet{} Developed and calibrated electromagnetic--thermal simulations of inductive composite welding in ANSYS, matching experimental temperatures to support control of heating and final part geometry.\par
+\vspace{2pt}\textbf{Autonomous Docking --- Research Project}\hfill Sep. 2023--May 2024\par
+École Polytechnique / The Exploration Company\par
+\hangindent=0.7em\hangafter=1 \textbullet{} Developed vision-based relative navigation and guidance for \textbf{Nyx's autonomous docking}; tested closed-loop maneuvers using a quadcopter as the hardware platform. \href{https://rwin2.github.io/erwinpoussi.github.io/project/visual-based-docking/}{\underline{view work}}\par
+\vspace{2pt}\textbf{Officer Cadet --- AI Tool Development}\hfill Nov. 2022--Apr. 2023\par
+French Police Cybercrime Unit\par
+\hangindent=0.7em\hangafter=1 \textbullet{} Led trainee software engineers developing an AI tool to analyze leaked communications with police investigators; documented methods for new unit members.\par
+\vspace{3pt}{\color{navy}PUBLICATIONS}\par\vspace{1pt}{\color{navy!40}\hrule}\vspace{2pt}
+\textbf{Under review:} Ghasimi, S. D., \textbf{Poussi, E.}, Rabinovitch, J. ``Surrogate-Based Optimization of Broadcloth Fabric Permeability for Mars Landing Parachute Simulations.'' Revised manuscript submitted for final review, 2026.\par
+\textbf{Preprint:} Xu, W., \textbf{Poussi, E.}, et al. ``PantheonOS: An Evolvable Multi-Agent Framework for Automatic Genomics Discovery.'' bioRxiv, 2026. \href{https://doi.org/10.64898/2026.02.26.707870}{\underline{doi:10.64898/2026.02.26.707870}}\par
+\vspace{3pt}{\color{navy}\textbf{TECHNICAL SKILLS \& LANGUAGES}}\par\vspace{1pt}{\color{navy!40}\hrule}\vspace{2pt}
+Python, C/C++, PyTorch, ROS2, MuJoCo, ANSYS; reinforcement learning, imitation learning, perception, motion planning and control.\par
+\textbf{Languages:} French (native), English (TOEFL 109), Mooré (fluent), German (basic).\par
+\vspace{3pt}{\color{navy}\textbf{LEADERSHIP \& DISTINCTIONS}}\par\vspace{1pt}{\color{navy!40}\hrule}\vspace{2pt}
+\textbf{Stanford BGSA} Fundraising Chair: raised \$3,000+ toward a \$10,000+ team effort. \textbf{Inspirit AI} Instructor: taught hands-on machine learning and neural networks (2026).\par
+\textbf{Cheer Up:} supported young cancer patients. \textbf{Mentoring:} mathematics, physics and university-application guidance for students in Burkina Faso, France and the U.S.\par
+\textbf{French Government Excellence Fellowship} (2022); \textbf{1st nationwide} in Burkina Faso's mathematics \& physical sciences baccalauréat (2020).\par
 \end{document}
