@@ -12,7 +12,7 @@ tags:
 
 ## Demo
 <video width="100%" height="420" autoplay loop muted playsinline>
-  <source src="demo.mp4" type="video/mp4">
+  <source src="demo.mp4?v=online-planning" type="video/mp4">
 </video>
 
 Whole-body robot control (G1 and Spot) for loco-manipulation, using GAIT scene reasoning.
