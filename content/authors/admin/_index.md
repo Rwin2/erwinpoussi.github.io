@@ -44,7 +44,7 @@ social:
     link: https://www.linkedin.com/in/erwin-poussi-a05099215/
   - icon: cv
     icon_pack: ai
-    link: uploads/resume.pdf?v=20261108
+    link: uploads/resume.pdf?v=20261111
 
 highlight_name: true
 ---
